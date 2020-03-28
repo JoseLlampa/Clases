@@ -15,7 +15,7 @@ namespace Clases
             ubicacion = "No se ingreso ubicación";
         }
 
-        public Restaurant (string nombre,int telefono,string ubicacion)
+        public Restaurant(string nombre, int telefono, string ubicacion)
         {
             this.nombre = nombre;
             this.telefono = telefono;
@@ -68,8 +68,25 @@ namespace Clases
             this.telefono = 1100000000 + telefono;
         }
 
+        public string getMostrarSinNumero()
+        {
+
+            if (telefono == 99999999)
+            {
+                return "Información incompleta";
+            }
+            else
+            {
+                return "Informacion completa";
+            }
+
+        }
         private string nombre;
         private int telefono;
-        private string ubicacion;      
+        private string ubicacion;
+        
+        }
+        
     }
-}
+    
+              
